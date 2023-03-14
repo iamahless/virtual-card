@@ -4,7 +4,6 @@ namespace App\Http\Livewire\VirtualCard;
 
 use App\Models\VirtualCard;
 use Illuminate\Contracts\View\View;
-use Illuminate\Support\Str;
 use Livewire\Component;
 
 class FormGenerator extends Component
@@ -21,7 +20,7 @@ class FormGenerator extends Component
         'name' => 'required|min:2',
         'linkedin_url' => 'required|url',
         'github_url' => 'required|url',
-        'phone' => 'required|numeric|min:7',
+        'phone' => 'required|min:7',
     ];
 
     public function render(): View

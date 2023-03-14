@@ -1,7 +1,7 @@
 <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mt-12">
     <div class="mx-auto max-w-3xl">
         <form class="space-y-8" wire:submit.prevent="submit">
-            @csrf
+            <!-- @csrf -->
             <div class="space-y-8 sm:space-y-5">
                 <div class="space-y-6 sm:space-y-5">
                     <div>

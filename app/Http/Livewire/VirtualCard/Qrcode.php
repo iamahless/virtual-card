@@ -18,7 +18,7 @@ class Qrcode extends Component
     {
         $virtualCard = VirtualCard::where('slug', $slug)->first();
 
-        if (!$virtualCard) {
+        if (! $virtualCard) {
             return abort(404, 'Sorry, we couldn’t find the virtual card you’re looking for');
         }
 
