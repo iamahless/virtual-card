@@ -1,15 +1,15 @@
 <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mt-12">
     <div class="mx-auto max-w-3xl">
-        <form class="space-y-8 divide-y divide-gray-200" wire:submit.prevent="submit">
+        <form class="space-y-8" wire:submit.prevent="submit">
             @csrf
-            <div class="space-y-8 divide-y divide-gray-200 sm:space-y-5">
+            <div class="space-y-8 sm:space-y-5">
                 <div class="space-y-6 sm:space-y-5">
                     <div>
                         <h1 class="font-semibold leading-9 text-gray-900 text-3xl">QR Code Image Generator</h1>
                     </div>
 
                     <div class="space-y-6 sm:space-y-5">
-                        <div class="sm:grid sm:grid-cols-3 sm:items-start sm:gap-4 sm:border-t sm:border-gray-200 sm:pt-5">
+                        <div class="sm:grid sm:grid-cols-3 sm:items-start sm:gap-4 sm:pt-5">
                             <label for="name" class="block text-sm font-medium leading-6 text-gray-900 sm:pt-1.5">Name</label>
                             <div class="mt-2 sm:col-span-2 sm:mt-0">
                                 <div class="flex max-w-lg rounded-md shadow-sm">
@@ -21,7 +21,7 @@
                     </div>
 
                     <div class="space-y-6 sm:space-y-5">
-                        <div class="sm:grid sm:grid-cols-3 sm:items-start sm:gap-4 sm:border-t sm:border-gray-200 sm:pt-5">
+                        <div class="sm:grid sm:grid-cols-3 sm:items-start sm:gap-4 sm:pt-5">
                             <label for="phone" class="block text-sm font-medium leading-6 text-gray-900 sm:pt-1.5">Phone</label>
                             <div class="mt-2 sm:col-span-2 sm:mt-0">
                                 <div class="flex max-w-lg rounded-md shadow-sm">
@@ -33,7 +33,7 @@
                     </div>
 
                     <div class="space-y-6 sm:space-y-5">
-                        <div class="sm:grid sm:grid-cols-3 sm:items-start sm:gap-4 sm:border-t sm:border-gray-200 sm:pt-5">
+                        <div class="sm:grid sm:grid-cols-3 sm:items-start sm:gap-4 sm:pt-5">
                             <label for="linkedin_url" class="block text-sm font-medium leading-6 text-gray-900 sm:pt-1.5">LinkedIn URL</label>
                             <div class="mt-2 sm:col-span-2 sm:mt-0">
                                 <div class="flex max-w-lg rounded-md shadow-sm">
@@ -45,7 +45,7 @@
                     </div>
 
                     <div class="space-y-6 sm:space-y-5">
-                        <div class="sm:grid sm:grid-cols-3 sm:items-start sm:gap-4 sm:border-t sm:border-gray-200 sm:pt-5">
+                        <div class="sm:grid sm:grid-cols-3 sm:items-start sm:gap-4 sm:pt-5">
                             <label for="github_url" class="block text-sm font-medium leading-6 text-gray-900 sm:pt-1.5">GitHub URL</label>
                             <div class="mt-2 sm:col-span-2 sm:mt-0">
                                 <div class="flex max-w-lg rounded-md shadow-sm">

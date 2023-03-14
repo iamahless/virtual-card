@@ -33,11 +33,13 @@ class FormGenerator extends Component
     {
         $this->validate();
 
-        VirtualCard::create([
+        $virtualCard = VirtualCard::create([
             'name' => $this->name,
             'phone' => $this->phone,
             'linkedin_url' => $this->linkedin_url,
             'github_url' => $this->github_url,
         ]);
+
+        return redirect()->route('qrcode', [$virtualCard->slug]);
     }
 }

@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Livewire\VirtualCard\FormGenerator;
+use App\Http\Livewire\VirtualCard\Profile;
+use App\Http\Livewire\VirtualCard\Qrcode;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +16,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('pages.home');
-});
+Route::get('/', FormGenerator::class)->name('home');
+Route::get('/{slug}', Profile::class)->name('virtual-card');
+Route::get('/qrcode/{slug}', Qrcode::class)->name('qrcode');

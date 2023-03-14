@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-full">
 
 <head>
     <meta charset="UTF-8">
@@ -11,9 +11,9 @@
     @vite('resources/css/app.css')
 </head>
 
-<body>
+<body class="h-full">
 
-    @yield('content')
+    {{ $slot }}
 
     @livewireScripts
 </body>
