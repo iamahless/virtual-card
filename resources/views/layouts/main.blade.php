@@ -6,11 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Virtual Card Generator</title>
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
     @livewireStyles
     @vite('resources/css/app.css')
 </head>
 
 <body>
+
+    @yield('content')
 
     @livewireScripts
 </body>
