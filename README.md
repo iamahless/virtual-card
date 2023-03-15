@@ -17,7 +17,10 @@ To run the project on your local machine, follow these instructions:
 
  - Clone the repository to your local machine.
  - Install the dependencies by running `composer install` and  `npm install` in the root directory.
+ - To build the frontend assets run `npm run build`
  - Also run `cp .env.example .env` and `php artisan key:generate`
+ - To run migration `php artisan migrate`
  - To run test `php artisan test`
+ - To build frontend files run `npm run build`
  - Start the development server by running `php artisan server`.
  - Open the project in your browser by navigating to http://localhost:3000.
